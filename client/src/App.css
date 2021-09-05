@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+  font-family: Kanit, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+h1 {
+  margin-top:60px;
+}
+
+.product {
+  background-color:white;
+  border: 1px solid black;
+  width:30%;
+  border-radius:5px;
+  padding:10px;
+  margin: 0 auto;
+  margin-top:20px;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#user-info {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#account-short {
+        
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  display:none;
+}
+
+#account {
+  border-radius: 30px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  display:block;
+  margin-right:5px;
+}
+
+.nav-button {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:black;
+  background-color:white;
+  text-align:center;
+  transition: all 0.2s;
+
+}
+
+.nav-button:hover {
+  color:#000000;
+  background-color:#4095c6;
+  text-decoration: none;
+}
+
+#no-products {
+  margin: 0 auto;
+  margin-top:18%;
+}
+
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+.form-style-6 h1{
+	background: #343A3F;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #343A3F;
+	padding: 3%;
+	border: 1px solid #343A3F;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #343A3F;
+	border-bottom: 2px solid #343A3F;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+  color:black;
+	background: #F7F7F7;
+}
