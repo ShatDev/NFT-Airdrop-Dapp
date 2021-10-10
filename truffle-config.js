@@ -17,10 +17,30 @@ module.exports = {
       },
       network_id: 97,
     },
+    rinkeby_infura: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, 'https://rinkeby.infura.io/v3/bff6ddfbc539450c8bda156c8a71484c', AccountIndex)
+      },
+      skipDryRun: true,
+      network_id: 4,
+    },
+    avalanche_c_chain: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, 'https://api.avax.network/ext/bc/C/rpc')
+      },
+      skipDryRun: true,
+      network_id: 1
+    }
   },
   compilers: {
     solc: {
       version: "^0.8.0"
     }
+  },
+  plugins: [
+    'truffle-plugin-verify'
+  ],
+  api_keys: {
+    etherscan: process.env.ETHERSCAN_API_KEY
   }
 };
